@@ -61,9 +61,12 @@ class TaskScreen extends StatelessWidget {
           ),
           // Inside the `Column` in the build method, after Expanded(child: ListView...):
           ElevatedButton.icon(
-            icon: const Icon(Icons.delete),
-            label: const Text('Delete All Tasks'),
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+            icon: const Icon(Icons.delete, color: Colors.black),
+            label: const Text(
+              'Delete All Tasks',
+              style: TextStyle(color: Colors.black),
+            ),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
             onPressed: () {
               showDialog(
                 context: context,
